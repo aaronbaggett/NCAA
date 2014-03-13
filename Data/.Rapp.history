@@ -1,0 +1,327 @@
+?as.data.frame
+pw <- data.frame(pw)
+head(pw)
+pw <- data.frame(p1, p2, p3, p4, p5, p6)
+head(pw)
+pw.df <- data.frame(p1, p2, p3, p4, p5, p6)
+pw <- c(pw.df[ , 1:6])
+head(pw)
+pw.df <- data.frame(p1, p2, p3, p4, p5, p6, pw)
+head(pw.df)
+pw.df <- data.frame(p1, p2, p3, p4, p5, p6)
+pw.df
+head(pw.df)
+pw.df[1, 1:6]
+pw.df[2, 1:6]
+list(pw.df[2, 1:6])
+as.vector(pw.df[2, 1:6])
+factor(pw.df[2, 1:6])
+matrix(pw.df[2, 1:6])
+pw.df[2, 1:6]
+c(pw.df[2, 1:6])
+pw.df[2, 1:6]
+print(pw.df[2, 1:6])
+head(pw.df)
+rowsum(pw.df[1, ])
+rowsum(pw.df, 1)
+rowsum(pw.df, 6)
+?rowsum
+table(pw.df)
+for(i in j)
+{}
+aggregate(pw.df, by = list(pw.df[, 1:6]))
+aggregate(pw.df, by = list(pw.df[, 1:6]), FUN = 'mean')
+library('effects')
+library(effects)
+install.packages('effects')
+library(effects)
+head(BEPS)
+table(BEPS$vote)
+library(lme4)
+head(cake)
+install.packages('hmmm')
+head(accident)
+library(hmmm)
+head(accident)
+data(accident)
+head(accident)
+y <- getnames(accident, st = 9)
+head(y)
+y
+tail(y, 12)
+head(BEPS)
+install.packages('bayesm')
+library(bayesm)
+?bayesm
+?fsh
+na=2; nd=1; p=3#
+vec=c(1,1.5,.5,2,3,1,3,4.5,1.5)#
+Xa=matrix(vec,byrow=TRUE,ncol=3)#
+Xa=cbind(Xa,-Xa)#
+Xd=matrix(c(-1,-2,-3),ncol=1)#
+createX(p=p,na=na,nd=nd,Xa=Xa,Xd=Xd)#
+createX(p=p,na=na,nd=nd,Xa=Xa,Xd=Xd,base=1)#
+createX(p=p,na=na,nd=nd,Xa=Xa,Xd=Xd,DIFF=TRUE)#
+createX(p=p,na=na,nd=nd,Xa=Xa,Xd=Xd,DIFF=TRUE,base=2)#
+createX(p=p,na=na,nd=NULL,Xa=Xa,Xd=NULL)#
+createX(p=p,na=NULL,nd=nd,Xa=NULL,Xd=Xd)
+install.packages("acs")
+library(acs)
+?acs
+================================================ ####
+### ================ NCAA Bat Study ================ ####
+### ================================================ ####
+#
+### Load packages#
+pckg.list <- c("ggplot2", "reshape2", "plyr", "yhat", "car")#
+install.packages(pckg.list)#
+#
+library(ggplot2)#
+library(reshape2)#
+library(plyr)#
+library(psych)#
+library(yhat)#
+library(car)#
+#
+### Read in file#
+ncaa <- read.csv(url("http://goo.gl/C3KXm"))#
+#
+### Change variable names to lower case#
+names(ncaa) <- tolower(names(ncaa))#
+#
+attach(ncaa)#
+#
+ncaa.sub <- subset(ncaa, year >= 2010 & year <= 2011, select = c(year, bat, off_hr, off_sh, off_sb))
+describe(ncaa.sub)
+describe(ncaa.sub[year == 2010])
+describe(ncaa.sub[year == 2010,])
+describe(ncaa.sub[ncaa.sub$year == 2010,])
+describe(ncaa.sub[ncaa.sub$year == 2011,])
+a <- 400
+quantile(a)
+a <- 0:400
+head(a)
+quantile(a)
+?quantile
+quantile(a, .10)
+quantile(a, .25)
+400/5
+400-80
+quartile(a)
+quantile(a)
+a <- 470
+quantile(a)
+a <- 0:470
+quantile(a)
+a
+a-80
+a/5
+470/5
+470-94
+(470-94) - 94
+375-94
+280-94
+186-94
+185-9
+185-94
+470*.91
+470*.81
+470*.71
+470*.61
+470*.51
+286.7/470
+hist(rnorm(500, mean = 0, sd = 1))
+hist(rnorm(500, mean = 0, sd = 1), bin = .1)
+library(ggplot2)
+qplot(rnorm(500, 0, 1), geom = "histogram", bin = .1)
+qplot(rnorm(500, 0, 1), geom = "histogram", bin = .5)
+qplot(rnorm(500, 0, 1), geom = "histogram", bin = .25)
+qplot(rnorm(500, 0, 1), geom = "histogram", bin = .15)
+qplot(rnorm(500, 0, 1), geom = "histogram", bin = .25, color = I("white"))
+qplot(rnorm(500, 0, 1), geom = "histogram", bin = .25, color = I("white"), fill = I("dodgerblue2"))
+470*.10
+470*.91
+470*.81
+470*.71
+470*.61
+427.69/470
+427/470
+426/470
+470*90
+470*.90
+424/470
+425/470
+427/470
+425.5/470
+425/470
+425.49/470
+425.4/470
+round(425/470, 2)
+round(425/470, 3)
+round(425.5/470, 3)
+round(425.4/470, 3)
+round(425/470, 3)
+round(425/470, 2.5)
+round(425/470, 3)
+round(470*81, 3)
+round(470*.81, 3)
+380.7/470
+round(380.7/470, 3)
+round(380.7/470, 4)
+round(380/470, 4)
+round(380/470, 3)
+round(333.7/470, 3)
+87.49*6
+87.49*8
+124.49*2
+699.92 + 248.98
+library(psych)
+psych
+?psych
+cor.plot(Thurstone,main="9 cognitive variables from Thurstone")
+cor.plot(Thurstone, zlim=c(0,1),main="9 cognitive variables from Thurstone")
+cor.plot(mat.sort(Thurstone),TRUE,zlim=c(0,1), #
+       main="9 cognitive variables from Thurstone (sorted by factor loading) ")
+cor.plot(cor(simp),main="24 variables in a circumplex")
+simp <- sim.circ(24)#
+cor.plot(cor(simp),main="24 variables in a circumplex")
+age <- round(rnorm(39, mean = 21.36, sd = 3.56))
+age
+max(age)
+min(age)
+age+3
+?rnorm()
+u <- runif(20)
+dunif(u) == 1
+dunif(x, min = 0, max = 1, log = FALSE)
+dunif(x, min = 0, max = 1, log = FALSE)
+age <- age + 3
+age
+mean(age)
+sd(age)
+setwd("/Users/AB/NCAA")
+------------------- offensive performance, 2010--2011 ------------------- ####
+##################################################################################
+#
+### Package list ----------------------------------------------------------------#
+library(plyr)#
+library(reshape2)#
+library(ggplot2)#
+#
+### Read in and clean data ------------------------------------------------------#
+#
+# 2010/2011 offensive data#
+off.10 <- read.csv("2010_offense.csv", header = TRUE)#
+off.11 <- read.csv("2011_offense.csv", header = TRUE)#
+#
+# Split "off.10" data.frame for trend-line graphics#
+df.10 <- ddply(off.10, .(year, bat, g), summarize, hrs = mean(hr), #
+  shs = mean(sh), sbs = mean(sb))#
+# Split "off.11" data.frame for trend-line graphics#
+df.11 <- ddply(off.11, .(year, bat, g), summarize, hrs = mean(hr), #
+  shs = mean(sh), sbs = mean(sb))#
+#
+# Bind "off.10" and "off.11" data.frames for MANOVA#
+bat.dat <- rbind(off.10, off.11)#
+#
+# Split "bat.dat" data.frame for team predictor variable totals#
+man.dat <- ddply(bat.dat, .(name, year, bat), summarize, hrs = max(hr), #
+  shs = max(sh), sbs = max(sb))
+setwd("/Users/AB/NCAA/Data")
+2010/2011 offensive data#
+off.10 <- read.csv("2010_offense.csv", header = TRUE)#
+off.11 <- read.csv("2011_offense.csv", header = TRUE)
+Split "off.10" data.frame for trend-line graphics#
+df.10 <- ddply(off.10, .(year, bat, g), summarize, hrs = mean(hr), #
+  shs = mean(sh), sbs = mean(sb))#
+# Split "off.11" data.frame for trend-line graphics#
+df.11 <- ddply(off.11, .(year, bat, g), summarize, hrs = mean(hr), #
+  shs = mean(sh), sbs = mean(sb))#
+#
+# Bind "off.10" and "off.11" data.frames for MANOVA#
+bat.dat <- rbind(off.10, off.11)#
+#
+# Split "bat.dat" data.frame for team predictor variable totals#
+man.dat <- ddply(bat.dat, .(name, year, bat), summarize, hrs = max(hr), #
+  shs = max(sh), sbs = max(sb))
+head(man.dat)
+ncaa.dat <- read.csv("~/Dropbox/NCAA/ncaa_baseball.csv", header = TRUE)
+Home runs#
+qplot(sample = hrs, data = man.dat, color = bat) + theme_bw() + #
+  scale_color_brewer(palette = "Set1")
+teams <- 1:25
+teams
+hrs <- round(rnorm(mean = 54, sd = 56))
+hrs <- round(rnorm(25mean = 54, sd = 56))
+hrs <- round(rnorm(25, mean = 54, sd = 56))
+hrs
+hist(hrs)
+hrs <- round(rnorm(25, mean = 54, sd = 26))
+hrs
+hist(hrs)
+mean(hrs)
+hrs <- aluminum
+aluminum <- hrs
+alum <- aluminum
+alum
+hist(alum)
+min(alum)
+graph <- round(rnorm(25, mean = 21, sd = 16))
+graph
+graph <- round(rnorm(25, mean = 21, sd = 13))
+graph
+hist(graph)
+max(graph)
+min(graph)
+mean(graph)
+wood <- round(rnorm(25, mean = 13, sd = 8))
+wood
+wood <- round(rnorm(25, mean = 13, sd = 6))
+wood
+wood <- round(rnorm(25, mean = 13, sd = 3))
+wood
+wood <- round(rnorm(25, mean = 13, sd = 4))
+wood
+min(wood)
+max(wood)
+mean(wood)
+sd(wood)
+bats <- data.frame(teams, alum, graph, wood)
+bats
+hrs <- cbind(alum, graph, wood)
+hrs
+hrs <- rbind(alum, graph, wood)
+hrs
+cbind(alum, graph)
+rbind(alum, graph)
+alum+graph+wood
+as.list(c(alum, graph, wood))
+cbind(c(alum, graph, wood))
+hrs <- cbind(c(alum, graph, wood))
+teams <- 1:75
+bats <- data.frame(teams, hrs)
+bats
+bat <- rep(1:3, each = 25)
+bat
+bat <- rep("alum", 25)
+bat
+bat <- bat + rep("graph", 25)
+bat + rep("graph", 25)
+bat
+alum <- rep("alum", 25)
+graph <- rep("graph", 25)
+wood <- rep("graph", 25)
+bat <- cbind(c(alum, graph, wood))
+bat
+bats <- data.frame(teams, bat, hrs)
+bats
+wood <- rep("wood", 25)
+bat <- cbind(c(alum, graph, wood))
+bats <- data.frame(teams, bat, hrs)
+bats
+anova(bat ~ hrs, data = bats)
+anova(bat, hrs, data = bats)
+lm(bat ~ hrs, data = bats)
+write.csv(bats, "~/Desktop")
+write.csv(bats, "~/Desktop.csv")
+write.csv(bats, "~/Desktop/bats.csv")
